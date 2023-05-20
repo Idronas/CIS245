@@ -1,0 +1,10 @@
+file_name = input("Please enter your file name: ")
+username = input("Please enter your name: ")
+address = input("Please enter your address: ")
+phone_number = input("Please enter your phone number: ")
+
+f = open(file_name + '.txt', 'w')
+f.write(f'{username} , {address} , {phone_number}')
+f.close()
+f = open(file_name + '.txt', 'r')
+print(f.read())
